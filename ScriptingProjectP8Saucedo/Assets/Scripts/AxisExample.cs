@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class AxisExample : MonoBehaviour
 {
     public float range;
-    public Text textOutput;
+   
     
     
     // Start is called before the first frame update
@@ -23,6 +23,6 @@ public class AxisExample : MonoBehaviour
         float xpos = h * range;
 
         transform.position = new Vector3(xpos, 2f, 0);
-        textOutput.text = "Value Returned: " + h.ToString("F2");
+       Debug.Log ("value Returned: " + h.ToString("F2"));
     }
 }
